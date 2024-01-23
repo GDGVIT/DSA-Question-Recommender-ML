@@ -18,6 +18,7 @@
 - Desc: to get recommendations<br>
 - Parameter: cnt (integer >=0) to recommend questions from the next cluster of lowest probability <br>
 - Response: {
+                "id":<value>, 
                 "title": <value>, 
                 "difficulty": <value>, 
                 "related_topics": <value>
@@ -45,15 +46,7 @@
             }<br>
 
 
-<br>
 
-## Features
-- [ ]  < feature >
-- [ ]  < feature >
-- [ ]  < feature >
-- [ ]  < feature >
-
-<br>
 
 ## Dependencies
 - **Python**: `>=3.9.10`
@@ -67,15 +60,19 @@
 
 ## Running
 
-You can install the required dependencies using the following command:
+Install the other required dependencies using the following command, given that python is installed:
 
 ```bash
 pip install -r requirements.txt
 ```
+Navigate to the project directory. Now, you can run the development server using the command:<br>
+```bash
+flask --app mlapi run
+```
 You can test the API using cURL with the following commands:<br>
 GET Request,
 ```bash
-curl "http://example.com/get_question/<value1>"
+curl "http://example.com/get_question/<int>"
 ```
 ```bash
 curl "http://example.com/retrain"
@@ -86,24 +83,8 @@ curl -H "Content-Type: application/json" -d "{\"example\":123}" "http://example.
 ```
 <br>
 Or you can use Postman API. Learn more about it at https://learning.postman.com/docs/designing-and-developing-your-api/deploying-an-api/deploying-an-api-overview/
-## Dependencies
- - < dependency >
- - < dependency >
+<br>
 
-
-## Running
-
-
-< directions to install > 
-```bash
-< insert code >
-```
-
-< directions to execute >
-
-```bash
-< insert code >
-```
 
 ## Contributors
 
